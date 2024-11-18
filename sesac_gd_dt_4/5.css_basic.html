@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 스타일 태그는 head영역에 적는다!!!!! -->
+    <style>
+        /* 전체선택자
+        *{ color: blue;} */
+
+        /* 태그선택자 */
+        /* div > div{
+            color: red;
+        }
+        ul{color: blue;}
+        span{color: green;}
+        p{ color: aqua;} */
+
+        /* 클래스선택자 */
+        /* .carrot{ color: orange;}
+        .tomato{ color: tomato;} */
+
+        /* 아이디선택자 */
+        /* #orange{ color: orange;} */
+
+        /* 일치선택자 아이디 이면 . 대신 # 사용하면 됨. */
+        span.orange{
+            color: red;
+        }
+        
+        /* 자식선택자 */
+        /* ul > .orange{
+            color: red;
+        } */
+        
+        /* 하위(후손)선택자 '띄어쓰기'가 기호임 */
+        /* div .orange{
+            color: red;
+        } */
+
+        /* 인접형제선택자 */
+        /* .orange + li{
+            color: red;
+        } */
+
+        /* 일반형제선택자 */
+        /* .orange ~ li{
+            color: red;
+        } */
+        
+        /* hover 요소를 마우스 커서가 올라가 있는 동안 */
+        a:hover{ color:red; }
+
+        /* active  요소를 마우스 클릭을 하고있는 동안 */
+        a:active { color: blue;}
+
+        /* focus 요소가 포커스되면 */
+        input:focus{ background-color: aqua;}
+
+        /* first-child */
+        .fruits span:first-child{ color: blue;}
+
+        /* last-child */
+        .fruits h3:last-child{color: red;}
+
+        /* nth-child(n)  n은 0부터 시작! 이게 제일 편한듯 ㅋㅋ */
+        .fruits *:nth-child(3){ color: brown;}
+        
+        .fruits *:nth-child(2n){color: green;}
+
+        /* not */
+        /* .fruits *:not(span){color: yellow;} */
+
+        /* 가상 요소 선택자 :before, :after
+        • 반드시 content 라는 속성을 사용!
+        • 빈 값(“”) 이라도 넣어 주어야 적용이 됨!
+        • 실제로 의미 없는 HTML 태그를 만들지 않고 요소 삽입이 가능하여 자주 사용함.
+        • 예를 들어 쇼핑몰 페이지에 메뉴에 Hot, 추천 등을 넣기 위해 별도의 태그를 삽입하는 것이 아니라 가상요소선택자를 활용하여 처리하면 편리함!!*/
+        /* ::before */
+        .box::before{
+            content:"앞!";
+        }
+        /* ::after */
+        .box::after{
+            content:"뒤!";
+        }
+
+        /* 속성 선택자 
+        •지정한특정속성을가지고있는태그를선택하는선택자 */
+        [disabled]{
+            background-color: red;
+        }
+
+        [type="password"]{
+            background-color: skyblue;
+        }
+
+        /* CSS 우선순위
+        • 동일한 요소를 다른 선택자로 적용해 여러 스타일이 적용되는 난감한 상황이 발생하기도 함
+        • CSS 파일이 여러 개라면 더욱 난감해짐
+
+        !important > 인라인 스타일 > 아이디 선택자 > 클래스/속성/가상 선택자 > 태그 선택자 > 전체 선택자 */
+    </style>
+</head>
+<body>
+    <span style="background-color: black; color:white; font-size: 40px;">무지개</span>
+    <div style="background-color:red; width:100px;height:100px;"></div>
+    <div style="background-color:orange;width:200px;height:100px;"></div>
+    <div style="background-color:yellow;width:300px;height:100px;"></div>
+    <div style="background-color:green;width:400px;height:100px;"></div>
+    <div style="background-color:blue;width:500px;height:100px;"></div>
+    <div style="background-color:navy;width:600px;height:100px;"></div>
+    <div style="background-color:purple;width:700px;height:100px;"></div>
+    <hr>
+    <div>
+        <ul>
+            <li>사과</li>
+            <li>딸기</li>
+            <li>오렌지</li>
+        </ul>
+        <div>당근</div>
+        <p>토마토</p>
+        <span>오렌지</span>
+    </div>
+    <hr>
+    <div>
+        <ul>
+            <li>사과</li>
+            <li>딸기</li>
+            <li>오렌지</li>
+        </ul>
+        <div class="carrot">당근</div>
+        <p class="tomato">토마토</p>
+        <span id="orange">오렌지</span>
+    </div>
+    <div>
+        <ul>
+            <li>사과</li>
+            <li>딸기</li>
+            <li class="orange">오렌지</li>
+        </ul>
+        <div>당근</div>
+        <p>토마토</p>
+        <span class="orange">오렌지</span>
+    </div>
+<hr>
+<a href="https://www.naver.com">naver</a><br>
+<input type="text">
+<hr>
+<div class="fruits">
+    <span>딸기</span>
+    <span>수박</span>
+    <div>오렌지</div>
+    <p>망고</p>
+    <h3>사과</h3>
+</div>
+<hr>
+<div class="box">
+    content입니다.
+</div>
+<hr>
+<input type="text" value="myqorrn1">
+<input type="password" value="1234">
+<input type="text" value="abcd" disabled>
+
+</body>
+</html>
