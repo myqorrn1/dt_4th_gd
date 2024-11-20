@@ -1,0 +1,55 @@
+/* 눈누 폰트 적용법 */
+@font-face {
+    font-family: 'CookieRun-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+h1{
+    font-family: 'CookieRun-Regular';
+}
+
+/* 구글 폰트 적용법 */
+div{
+    font-family: "Bokor", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+
+
+    
+    /* 글자 크기 */
+    /* 기본 폰트 크기는 16px. */
+    font-size: 20px;
+
+    /* 글자 굵기 */
+    /* 
+        lighter, normal, bold, bolder
+        100 ~ 900 (100단위)
+    */
+    /* font-weight: 900; */
+
+    /* 글자 모양 */
+    /* 
+        normal, italic, oblique
+    */
+    font-style: italic;
+
+    /* 글자 정렬 */
+    /* 
+        center left right justify(양쪽 정렬)
+    */
+    text-align: center;
+
+    /* 글자선 */
+    /* 
+        underline, line-through, overline, none
+    */
+    text-decoration: line-through;
+
+    /* 줄 높이 */
+    line-height: 10px;
+}
+
+
+  

@@ -1,0 +1,31 @@
+.d-inline1{
+    display: inline;
+    background-color: lightblue;
+}
+
+.d-inline2{
+    display: inline;
+    background-color: lightcoral;
+}
+.d-block1{
+    display: block;
+    background-color: lightblue;
+}
+.d-block2{
+    display: block;
+    background-color: lightcoral;
+}
+
+.d-inline-block1{
+    display: inline-block; /* 이제 이걸 인라인블록으로 쓰겠다! 란 의미*/
+    background-color: blue;
+}
+.d-inline-block2{
+    display: inline-block;
+    background-color: red;
+    width: calc(300px - 100px); /* calc() 사용법 !! */
+    height: 300px;
+    text-align: center;
+    line-height: 200px;
+
+}
