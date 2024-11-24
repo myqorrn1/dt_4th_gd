@@ -96,7 +96,7 @@ html {
 
 :root{/* body, html, *, :root 모두 가능. */
     /* 전역 변수 */
-    --color-suecess: green;
+    --color-success: green;
     --color-error: red;
     --color-white: white;
 
