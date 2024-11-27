@@ -1,0 +1,109 @@
+/* p{
+    background-color: green;
+}
+@media screen and (min-width: 500px){
+    body{
+        background-color: skyblue;
+    }
+}
+@media screen and (max-width: 300px){
+    body{
+        background-color: orange;
+    }
+}
+@media screen and (max-height: 300px){
+    p{
+        font-style: italic;
+    }
+}
+@media screen and (min-height: 500px){
+    body{
+        background-color: green;
+    }
+} */
+
+/* -------------------------------------------- */
+
+
+
+@media screen and (min-width: 700px){
+
+    .box{
+        display: flex;
+    }
+    .item{
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        border: 1px solid red;
+        border-radius: 10px;
+        margin: 5px;
+    }
+}
+@media screen and (max-width: 700px){
+    .item{
+        width: 100px;
+        height: 100px;
+        background-color: skyblue;
+        border: 1px solid red;
+        border-radius: 10px;
+        margin: 5px;
+    }
+}
+
+/* --------------------------------------- */
+
+nav {
+    position: relative;
+    background-color: #333;
+    padding: 10px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger-label {
+    display: none;
+    cursor: pointer;
+
+    color: white;
+    font-size: 35px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-menu > li{
+    color: white;
+}
+
+/* 모바일에서 햄버거 메뉴 활성화 */
+@media (max-width: 768px) {
+    .hamburger-label {
+        display: block;
+        width: 30px;
+    }
+
+    .nav-menu {
+        /* display: none; */
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hamburger:checked ~ .nav-menu {
+        display: flex;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+}

@@ -41,14 +41,18 @@
     /* 수직 : top, center, bottom */
   
     /* background-position: center; */
+
     /* background-position: left top;  */
     /* 왼쪽 위 정렬*/
+
     /* background-position: right bottom;  */
     /* 오른쪽 아래 정렬*/
+
     /* background-position: 30px 100px;  */
     /* 왼쪽에서 30px, 위에서 100px*/
+
     /* background-position: 200px;  */
-    /* 값이 하나만 있으면 수평 위치만 설정, 수직은 기본값 cetner로 설정 */
+    /* 값이 하나만 있으면 수평 위치만 설정, 수직은 기본값 center로 설정 */
   
     /* 배경 이미지 크기 */
     /* 첫 번째는 너비(width), 두 번째는 높이(height) */
