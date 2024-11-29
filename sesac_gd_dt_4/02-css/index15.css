@@ -68,7 +68,7 @@
     animation-direction: alternate; */
 
     /* 애니메이션 단축 프로퍼티 */
-    animation: bounce1 1s ease-out infinite alternate ;
+    animation: bounce1 1s ease-out infinite alternate;
 }
 
 @keyframes bounce1 {
@@ -92,7 +92,8 @@
 }
 
 @keyframes bounce2 {
-    from, to {
+    from,
+    to {
         bottom: 0px;
         animation-timing-function: ease-out;
         /* 0px에서 정상속도로 시작 -> 속도 줄이면서 300px 됨.  */
@@ -120,7 +121,7 @@
 */
 
 /* 실습 */
-.ball{
+.ball {
     background: linear-gradient(rgb(0, 0, 0), rgb(255, 255, 255));
     width: 100px;
     height: 100px;
@@ -131,44 +132,40 @@
     animation-iteration-count: infinite; /* 애니메이션 무한 반복 */
     /* 애니메이션이 일정한 속도로 진행되도록 설정 */
     animation-timing-function: linear;
-
-
 }
 
 @keyframes ball {
     0% {
-        transform: translate(0vw,0vh);
-
+        transform: translate(0vw, 0vh);
     }
     25% {
-        transform: translate(calc(100vw - 100px),0vh);
-
+        transform: translate(calc(100vw - 100px), 0vh);
     }
     50% {
-        transform: translate(calc(100vw - 100px),calc(100vh - 100px)); 
+        transform: translate(calc(100vw - 100px), calc(100vh - 100px));
     }
     75% {
-        transform: translate(0vw, calc(100vh - 100px)); 
+        transform: translate(0vw, calc(100vh - 100px));
     }
     100% {
-        transform: translate(0vw, 0vh); 
+        transform: translate(0vw, 0vh);
     }
 }
 
-.contents{
+.contents {
     width: 200%;
     position: absolute;
     animation: content1 2s ease-in-out 2s 1;
 }
-@keyframes content1{
-   from{
-    left: 100%;
-   }
-   70%{
-    width: 200%;
-   }
-   to{
-    left: 0%;
-    width: 100%;
-   }
+@keyframes content1 {
+    from {
+        left: 100%;
+    }
+    70% {
+        width: 200%;
+    }
+    to {
+        left: 0%;
+        width: 100%;
+    }
 }
