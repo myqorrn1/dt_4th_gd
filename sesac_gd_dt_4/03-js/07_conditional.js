@@ -14,16 +14,16 @@
 
 // let number = Number(prompt('숫자를 입력하세요!'));
 // 1- prompt()로 사용자로부터 값을 입력 받고
-// 2- number() 문자열 -> 숫자형 형변환.
+// 2- Number() 문자열 -> 숫자형 형변환.
 
-// 2. if ~ else 문
+// 2) if ~ else 문
 // if (number > 10) {
 //     console.log('입력한 수는 10보다 크다.');
 // } else {
 //     console.log('입력한 수는 10보다 작거나 같다.');
 // }
 
-// 3. if ~ else if ~ else 문
+// 3) if ~ else if ~ else 문
 // if (number > 10) {
 //     console.log('입력한 수는 10보다 크다.');
 // } else if (number === 10) {
@@ -32,7 +32,7 @@
 //     console.log('입력한 수는 10보다 작다.');
 // }
 
-// 4. if~ else if * n ~ else 문
+// 4) if~ else if * n ~ else 문
 // else는 한번만 사용 가능.
 // else if 는 여러개 사용 가능.
 // if (number > 100 || number < 0) {
@@ -49,7 +49,7 @@
 //     console.log('F');
 // }
 
-// 5. 중첩 if문
+// 5) 중첩 if문
 let userId = 'user01';
 let userPw = '1234';
 // id, password 검사하는 함수
@@ -79,7 +79,7 @@ function loginUser() {
 // console.log(result);
 
 //-----------------------------------
-// switch 문
+// 2. switch 문
 // 하나 이상의 case 문으로 구성.
 
 // * default: "switch문 내의 모든 case가 매칭 되지 않을 때" 실행.
@@ -105,7 +105,7 @@ switch (a) {
     case 5:
         console.log('a가 5 이군요');
         break;
-    default:
+    default: // else 같은 거임.
         console.log('a가 무슨 값인지 모르겠습니다.');
         break;
 }
@@ -137,4 +137,3 @@ let now = new Date();
 let now2 = new Date().getHours();
 console.log(now);
 console.log(now2);
-
