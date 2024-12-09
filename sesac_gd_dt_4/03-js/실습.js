@@ -114,7 +114,7 @@ arr.forEach(function (a) {
 console.log(sum3);
 
 // ------------------------------------
-// 아 모르겠다 chat gpt ㄱㄱㄱㄱㄱㄱㄱ
+// 아 모르겠다 chat gpt ㄱㄱㄱㄱㄱㄱㄱ... => 해결....
 let fruits1 = [
     '사과',
     '딸기',
@@ -126,3 +126,13 @@ let fruits1 = [
     '망고',
 ];
 let fruits2 = ['수박', '사과', '참외', '오렌지', '파인애플', '망고'];
+
+const same = fruits1.filter(function (fruit) {
+    return fruits2.includes(fruit);
+});
+console.log(same);
+
+const diff = fruits1.filter(function (fruit) {
+    return !fruits2.includes(fruit);
+});
+console.log(diff);

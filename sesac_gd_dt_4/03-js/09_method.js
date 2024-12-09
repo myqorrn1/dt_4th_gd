@@ -38,8 +38,8 @@ console.log(str2.trim().length); // 14
 // 5. indexOf() 글자 위치 찾기
 // 위치(index) : 0부터 시작
 // 같은 문자열이 있으면 처음에 나오는 위치
-console.log(str.indexOf('y'));
-console.log(str.indexOf('i'));
+console.log(str.indexOf('y')); // 4
+console.log(str.indexOf('i')); // 7
 console.log(str.indexOf(' ')); // 5
 console.log(str.indexOf('v')); // -1
 // => 존재하지 않는 문자에 대해 검색하면 -1 반환.
@@ -101,7 +101,7 @@ arr2.shift();
 console.log(arr2);
 
 // 5. length: 배열의 길이 반환
-console.log(arr.length);
+console.log(arr.length); // length는 속성이라 ()가 없다!!
 
 // 6. includes(요소): 요소가 있는지 없는지 검사. true,false 반환
 console.log(arr2.includes('panda')); //true
