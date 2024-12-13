@@ -54,7 +54,7 @@ list[0].style.backgroundColor = 'purple';
 list[0].style.fontSize = '20px';
 list[0].style.color = 'white';
 
-// 반복문 사용해서 적용(list 배열에 포함된 모든 요소)
+// 반복문 사용해서 적용(list 에 포함된 모든 요소)
 for (let li of list) {
     li.style.backgroundColor = 'red';
     li.style.fonsSize = '40px';
