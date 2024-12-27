@@ -1,0 +1,82 @@
+p.lion{ background-color: red;}
+ul > .lion{
+    background-color: greenyellow;
+}
+#tiger{ background-color: yellow;}
+.lion{ color: sienna;}
+.zoo .lion{ font-weight: bold;}
+#tiger + li{ background-color: skyblue;}
+ul > li.lion ~ li{background-color: orange;}
+
+h1:hover{ color:red;}
+a:active{background-color:blue;}
+input:focus{background-color: orange;}
+
+.stripes > div:nth-child(2n){ background-color: yellow; color:black;}
+.stripes > div:nth-child(2n-1){ background-color: navy; color:white;}
+
+/* 가상 요소 선택자 :before, :after
+• 반드시 content 라는 속성을 사용!
+• 빈 값(“”) 이라도 넣어 주어야 적용이 됨!
+• 실제로 의미 없는 HTML 태그를 만들지 않고 요소 삽입이 가능하여 자주 사용함.
+• 예를 들어 쇼핑몰 페이지에 메뉴에 Hot, 추천 등을 넣기 위해 별도의 태그를 삽입하는 것이 아니라 가상요소선택자를 활용하여 처리하면 편리함!!*/
+.box::before{
+    content:"택시";
+}
+.box::after{
+    content:"빨리";
+}
+
+/* 속성 선택자 */
+[disabled] {
+    background-color: red;
+}
+[placeholder="이름"]{
+    background-color: orange;
+}
+[type="password"], [value="000-0000-0000"]{
+    background-color: blue;
+}
+
+
+h3:hover{ color: white; background-color: blue;}
+textarea{
+    width: 300px; height: 150px;
+}
+textarea:focus{ background-color: pink;}
+
+/* id 와 label for 를 연결하는 방법!!!!  */
+/* id가 red인 요소가 checked가 되면 다음 형제요소(+)인 label의 백그라운드가 레드가 된다는 뜻!! */
+#red:checked + label{ background-color: red;}
+#blue:checked + label{ background-color: blue;}
+#yellow:checked + label{ background-color: yellow;}
+
+button{
+    width: 50px;
+    height: 30px;
+    background-color: #f96666;
+    border: none;
+    border-radius: 10px;
+    color: white;
+
+    font-size: 17px;
+}
+button:active{
+    background-color: gray;
+    color: #f96666
+}
+
+#check2{
+   display: none;
+}
+#check2 + label{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid
+
+}
+
+#check3{
+    border: 1px solid black;
+}

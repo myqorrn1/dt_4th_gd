@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- * colspan : 해당 칸이 점유하는 "열"의 수 지정
+         * rowspan : 해당 칸이 점유하는 "행"의 수 지정 -->
+
+    <table border="1" cellspacing="0" cellpadding="0" width="500" height="300" textalign="center">
+        <tr>
+            <td colspan="2" align="center">1</td>
+            <td rowspan="2" align="center">2</td>
+        </tr>
+        <tr>
+            <td rowspan="2" align="center">3</td>
+            <td align="center">center</td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">4</td>
+        </tr>
+    </table>
+    <br>
+    <table border cellspacing="0">
+        <tr>
+            <th>구분</th>
+            <th>음료</th>
+            <th>가격</th>
+            <th>이미지</th>
+        </tr>
+        <tr>
+            <td rowspan="2" align="center">커피류</td>
+            <td align="center">아메리카노</td>
+            <td align="center">4,200원</td>
+            <td><img src="https://image.istarbucks.co.kr//upload/store/skuimg/2021/04/[110563]_20210426095937808.jpg" width="100"></td>
+        </tr>
+        <tr>
+            <td align="center">돌체라떼</td>
+            <td align="center">4,800원</td>
+            <td><img src="https://image.istarbucks.co.kr//upload/store/skuimg/2021/04/[128695]_20210426092031969.jpg" width="100"></td>
+        </tr>
+        <tr>
+            <td rowspan="2" align="center">주스류</td>
+            <td align="center">자바칩 프라푸치노</td>
+            <td rowspan="2" align="center">5000원</td>
+            <td><img src="https://image.istarbucks.co.kr//upload/store/skuimg/2021/04/[168016]_20210415154152122.jpg" width="100"></td>
+        </tr>
+        <tr>
+            <td align="center">녹차 프라푸치노</td>
+            <td><img src="https://image.istarbucks.co.kr//upload/store/skuimg/2021/04/[168016]_20210415154152122.jpg" width="100"></td>
+        </tr>
+    </table>
+</body>
+</html>

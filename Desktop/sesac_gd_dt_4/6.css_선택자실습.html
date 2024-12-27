@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link 적고 tab키 누르면 자동완성!! -->
+    <link rel="stylesheet" href="./css/6.css실습.css">
+    <style>
+        /* *{color:white;} */
+        /* *{background-color: gray;} */
+        /* span{background-color: red;} */
+        #first{background-color: blue;}
+        .second{background-color: green;}
+
+        /* p.lion{ background-color: red;}
+        ul > .lion{
+            background-color: greenyellow;
+        }
+        #tiger{ background-color: yellow;}
+        .lion{ color: sienna;}
+        .zoo .lion{ font-weight: bold;}
+        #tiger + li{ background-color: skyblue;}
+        ul > li.lion ~ li{background-color: orange;} */
+    </style>
+</head>
+<body>
+    <h1>기본 선택자 연습해보기</h1>
+    <p>기본선택자 연습을 해보아요!</p>
+    <span>안녕하세요</span>
+    <ol>
+        <li id="first">1</li>
+        <li class="second">2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ol>
+    <br>
+    <hr>
+    <h1>복합선택자 사용 연습</h1>
+    <p>동물원에 왔어요</p>
+    <div class="zoo">
+        <ul>
+            <span>여긴 사파리!</span>
+            <li>곰</li>
+            <li id="tiger">호랑이</li>
+            <li>팬더</li>
+            <span class="lion">사자1</span>
+            <li class="lion">사자2</li>
+            <li>사육사 sarah</li>
+            <li>사육사세령</li>
+        </ul>
+        <span class="lion">사파리 밖의 사자</span>
+    </div>
+    <p class="lion">야생의 사자</p>
+    <hr>
+    <h1>helloWorld</h1>
+    <a href="https://naver.com">naver</a><br>
+    <input type="text">
+    <hr>
+    <div class="stripes">
+        <div>navy</div>
+        <div>yellow</div>
+        <div>navy</div>
+        <div>yellow</div>
+        <div>navy</div>
+        <div>yellow</div>
+        <div>navy</div>
+        <div>yellow</div>
+        <div>navy</div>
+        <div>yellow</div>
+    </div>
+    <hr>
+    <div class="box">
+        여기요! 
+    </div>
+    <hr>
+    <input type="text" placeholder="이름">
+    <input type="password" value="pw">
+    <input type="text" value="000-0000-0000">
+    <input type="text" placeholder="핸드폰">
+    <input type="text" placeholder="주민번호" disabled>
+    <hr>
+    <h3>건의 사항을 적어주세요!</h3>
+    <textarea placeholder="건의 사항"></textarea><br>
+    <!-- id와 label for을 같게 작성하여 연결한다!! -->
+    <input type="checkbox" id="red"><label for="red">빨강</label>
+    <input type="checkbox" id="blue"><label for="blue">파랑</label>
+    <input type="checkbox" id="yellow"><label for="yellow">노랑</label><br>
+    <button>제출</button>
+    <hr>
+    <div class="container">
+        <input type="checkbox" id="check1">
+        <label for="check1"></label>
+        <input type="checkbox" id="check2">
+        <label for="check2"></label>
+        <input type="checkbox" id="check3">
+        <label for="check3"></label>
+        <input type="checkbox" id="check4">
+        <label for="check4"></label>
+    </div>
+</body>
+</html>
