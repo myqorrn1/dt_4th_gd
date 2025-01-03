@@ -24,14 +24,11 @@
 
 /* -------------------------------------------- */
 
-
-
-@media screen and (min-width: 700px){
-
-    .box{
+@media screen and (min-width: 700px) {
+    .box {
         display: flex;
     }
-    .item{
+    .item {
         width: 100px;
         height: 100px;
         background-color: black;
@@ -40,8 +37,8 @@
         margin: 5px;
     }
 }
-@media screen and (max-width: 700px){
-    .item{
+@media screen and (max-width: 700px) {
+    .item {
         width: 100px;
         height: 100px;
         background-color: skyblue;
@@ -77,7 +74,7 @@ nav {
     justify-content: space-around;
 }
 
-.nav-menu > li{
+.nav-menu > li {
     color: white;
 }
 
