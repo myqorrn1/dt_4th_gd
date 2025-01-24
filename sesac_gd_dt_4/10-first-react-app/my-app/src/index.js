@@ -3,14 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Clock from './Clock';
+import Practice from './Practice';
 // import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+/* root.render(
     <React.StrictMode>
         <App />
     </React.StrictMode>
-);
+);  */
 
 // </React.StrictMode>
 // - 개발 모드에서만 작동하는 특수 컴포넌트.
@@ -34,3 +35,9 @@ root.render(
 //         </React.StrictMode>
 //     );
 // }, 1000);
+
+root.render(
+    <React.StrictMode>
+        <Practice />
+    </React.StrictMode>
+);

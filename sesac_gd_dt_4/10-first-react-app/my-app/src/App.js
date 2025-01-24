@@ -1,7 +1,8 @@
 // import logo from './logo.svg';
 import './App.css';
 import image from './assets/logo.png';
-/* 
+/* 이미지 관련
+
   /src/assets 폴더 생성
   : React 컴포넌트 내부에서 사용되는 이미지, 아이콘 등 정적 파일 저장.
   - Ex) 배경 이미지, 버튼 아이콘, 프로필 이미지 등등
@@ -31,12 +32,14 @@ function App() {
         color: 'blue',
         fontSize: '48px',
     };
+
+   
     return (
         <div className="App">
             {/* JSX 문법 */}
 
             {/* 1. 하나로 감싸인 요소 */}
-            {/* 의미 없는 div가 싫다. -- <></> Fragment 문법 */}
+            {/* 의미 없는 div가 싫다면, <></> Fragment 문법 */}
             <>
                 <h1> JSX 문법 </h1>
             </>
@@ -45,7 +48,7 @@ function App() {
               - {}로 감싸면 js 표현식 사용 가능
               - {} 안에서 삼항 연산자 사용 가능(if, for문 사용불가!!!)
             */}
-            <div>{name} 하이?</div>
+            <div>{name} 하이~</div>
             <div>
                 {student === 'sesac' ? (
                     <span>새싹크루</span>
@@ -65,7 +68,7 @@ function App() {
 
             {/* 
                 3. style 속성
-                - 리액트에서 DOM 요소에 스타일 적용시 문자열 X --> 객체 사용!
+                - 리액트에서 DOM 요소에 스타일 적용시 문자열 X --> '객체' 사용!
                 - {{스타일명 : '값'}}
                 - 스타일 이름 중 하이픈(-)포함 시 camelCase로 작성해야 함. (ex. backgroundColor)
                 - font-size (x) JSX 에서는 (-) 는 진짜 빼기로 오인할 수 있음!
